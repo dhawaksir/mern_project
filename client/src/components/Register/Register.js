@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import './register.css';
 
 const Register = () => {
@@ -9,6 +10,12 @@ const Register = () => {
 
   const handleRegister = async () => {
     try {
+      // Basic form validation
+      if (!name || !email || !password) {
+        setRegistrationStatus('Please fill in all fields');
+        return;
+      }
+
       // Simulate a registration process (replace with actual API call)
       const response = await fetch('your_registration_api_endpoint', {
         method: 'POST',
@@ -56,7 +63,9 @@ const Register = () => {
         />
         <button className="register-button" onClick={handleRegister}>Register</button>
         <p className="registration-status">{registrationStatus}</p>
-        <p className="login-link">Already have an account? <a href="/login">Log in</a></p>
+        <p className="login-link">
+          Already have an account? <Link to="/login">Log in</Link> {/* Use Link component */}
+        </p>
       </div>
     </div>
   );

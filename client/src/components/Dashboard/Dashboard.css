@@ -13,7 +13,7 @@ body, h1, h2, p {
 
 .sidebar {
   width: 250px;
-  background-color: smokewhite; /* Change to your desired color */
+  background-color: #f5f5f5; /* Smoke grey background */
   color: #333;
 }
 
@@ -32,7 +32,8 @@ body, h1, h2, p {
 }
 
 .sidebar-nav a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 15px 20px;
   color: #333;
   text-decoration: none;
@@ -40,7 +41,11 @@ body, h1, h2, p {
 }
 
 .sidebar-nav a:hover {
-  background-color: #f5f5f5;
+  background-color: #ddd;
+}
+
+.sidebar-nav i {
+  margin-right: 10px;
 }
 
 .main-content {
@@ -74,6 +79,7 @@ body, h1, h2, p {
 .search-box i {
   margin-left: 10px;
   color: #666;
+  cursor: pointer;
 }
 
 .profile {
@@ -85,7 +91,7 @@ body, h1, h2, p {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .profile-info h3 {

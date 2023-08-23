@@ -1,21 +1,48 @@
 import React from 'react';
-import './Dashboard.css'; // Import your CSS for the dashboard
+import './Dashboard.css';
 
 const Dashboard = () => {
+  // Replace these with actual data from registration
+  const user = {
+    name: 'John Doe',
+    email: 'john@example.com',
+    profileImage: 'profile.jpg',
+  };
+
   return (
     <div className="dashboard-container">
-      {/* <div className="sidebar">
-        <h2>Dashboard</h2>
-        <ul className="menu">
-          <li className="menu-item">Home</li>
-          <li className="menu-item">Analytics</li>
-          <li className="menu-item">Reports</li>
-          <li className="menu-item">Settings</li>
-        </ul>
-      </div> */}
-      <div className="content">
-        <h1>Welcome to the Dashboard</h1>
-        <p>Your data at a glance</p>
+      <div className="sidebar">
+        <div className="logo">
+          <h1>Bress</h1>
+        </div>
+        <nav className="sidebar-nav">
+          <ul>
+            <li><a href="#dashboard"><i className="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="#projects"><i className="fas fa-tasks"></i> Projects</a></li>
+            <li><a href="#tasks"><i className="fas fa-clipboard-list"></i> Tasks</a></li>
+            <li><a href="#services"><i className="fas fa-cog"></i> Services</a></li>
+            <li><a href="#notifications"><i className="fas fa-bell"></i> Notifications</a></li>
+            <li><a href="#chat"><i className="fas fa-comments"></i> Chat</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div className="main-content">
+        <header className="dashboard-header">
+          <div className="search-box">
+            <input type="text" placeholder="Search..." />
+            <i className="fas fa-search"></i>
+          </div>
+          <div className="profile">
+            <img src={user.profileImage} alt="Profile" />
+            <div className="profile-info">
+              <h3>{user.name}</h3>
+              <p>{user.email}</p>
+            </div>
+          </div>
+        </header>
+        <section className="dashboard-section">
+          {/* Content for the Dashboard section */}
+        </section>
       </div>
     </div>
   );

@@ -1,21 +1,37 @@
 import React from 'react';
-import './Dashboard.css'; // Import your CSS for the dashboard
+import './Dashboard.css';
 
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      {/* <div className="sidebar">
-        <h2>Dashboard</h2>
-        <ul className="menu">
-          <li className="menu-item">Home</li>
-          <li className="menu-item">Analytics</li>
-          <li className="menu-item">Reports</li>
-          <li className="menu-item">Settings</li>
-        </ul>
-      </div> */}
-      <div className="content">
-        <h1>Welcome to the Dashboard</h1>
-        <p>Your data at a glance</p>
+      <div className="sidebar">
+        <div className="logo">
+          <img src="logo.png" alt="Company Logo" />
+        </div>
+        <nav className="sidebar-nav">
+          <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#chat">Chat</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div className="main-content">
+        <header className="dashboard-header">
+          <div className="search-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div className="profile">
+            <img src="profile.jpg" alt="Profile" />
+            <span>Welcome, John Doe</span>
+          </div>
+        </header>
+        <section className="dashboard-section">
+          {/* Content for the Dashboard section */}
+        </section>
       </div>
     </div>
   );

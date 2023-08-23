@@ -2,11 +2,18 @@ import React from 'react';
 import './Dashboard.css';
 
 const Dashboard = () => {
+  // Replace these with actual data from registration
+  const user = {
+    name: 'John Doe',
+    email: 'john@example.com',
+    profileImage: 'profile.jpg',
+  };
+
   return (
     <div className="dashboard-container">
       <div className="sidebar">
         <div className="logo">
-          <img src="logo.png" alt="Company Logo" />
+          <h1>Bress</h1>
         </div>
         <nav className="sidebar-nav">
           <ul>
@@ -23,10 +30,14 @@ const Dashboard = () => {
         <header className="dashboard-header">
           <div className="search-box">
             <input type="text" placeholder="Search..." />
+            <i className="fas fa-search"></i>
           </div>
           <div className="profile">
-            <img src="profile.jpg" alt="Profile" />
-            <span>Welcome, John Doe</span>
+            <div className="profile-info">
+              <h3>{user.name}</h3>
+              <p>{user.email}</p>
+            </div>
+            <img src={user.profileImage} alt="Profile" />
           </div>
         </header>
         <section className="dashboard-section">

@@ -13,16 +13,17 @@ body, h1, h2, p {
 
 .sidebar {
   width: 250px;
-  background-color: #333;
-  color: white;
+  background-color: smokewhite; /* Change to your desired color */
+  color: #333;
 }
 
 .logo {
   padding: 20px;
 }
 
-.logo img {
-  max-width: 100%;
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
 .sidebar-nav ul {
@@ -33,18 +34,19 @@ body, h1, h2, p {
 .sidebar-nav a {
   display: block;
   padding: 15px 20px;
-  color: white;
+  color: #333;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .sidebar-nav a:hover {
-  background-color: #444;
+  background-color: #f5f5f5;
 }
 
 .main-content {
   flex-grow: 1;
   padding: 20px;
+  background-color: white;
 }
 
 .dashboard-header {
@@ -54,17 +56,47 @@ body, h1, h2, p {
   margin-bottom: 20px;
 }
 
-.search-box input[type="text"] {
-  padding: 10px;
-  border: none;
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
   border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.search-box i {
+  margin-left: 10px;
+  color: #666;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
 }
 
 .profile img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.profile-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #777;
 }
 
 .dashboard-section {

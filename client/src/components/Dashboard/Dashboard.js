@@ -1,12 +1,12 @@
 import React from 'react';
 import './Dashboard.css';
+import profileImage from './assets/profile.png'; // Import the profile image
 
 const Dashboard = () => {
-  // Replace these with actual data from registration
   const user = {
     name: 'John Doe',
     email: 'john@example.com',
-    profileImage: 'profile.jpg',
+    profileImage: profileImage, // Use the imported profile image
   };
 
   return (

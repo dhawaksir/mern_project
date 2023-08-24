@@ -17,7 +17,7 @@ const Dashboard = () => {
         </div>
         <nav className="sidebar-nav">
           <ul>
-            <li><a href="#dashboard"><i className="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="#prfile"><i className="fas fa-chart-line"></i> Dashboard</a></li>
             <li><a href="#projects"><i className="fas fa-tasks"></i> Projects</a></li>
             <li><a href="#tasks"><i className="fas fa-clipboard-list"></i> Tasks</a></li>
             <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>

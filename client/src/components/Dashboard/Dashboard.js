@@ -1,12 +1,12 @@
 import React from 'react';
 import './Dashboard.css';
+import profileImage from './assets/profile.png'; // Import the profile image
 
 const Dashboard = () => {
-  // Replace these with actual data from registration
   const user = {
     name: 'John Doe',
     email: 'john@example.com',
-    profileImage: 'profile.jpg',
+    profileImage: profileImage, // Use the imported profile image
   };
 
   return (
@@ -17,10 +17,10 @@ const Dashboard = () => {
         </div>
         <nav className="sidebar-nav">
           <ul>
-            <li><a href="#dashboard"><i className="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="#prfile"><i className="fas fa-chart-line"></i> Dashboard</a></li>
             <li><a href="#projects"><i className="fas fa-tasks"></i> Projects</a></li>
             <li><a href="#tasks"><i className="fas fa-clipboard-list"></i> Tasks</a></li>
-            <li><a href="#services"><i className="fas fa-cog"></i> Services</a></li>
+            <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>
             <li><a href="#notifications"><i className="fas fa-bell"></i> Notifications</a></li>
             <li><a href="#chat"><i className="fas fa-comments"></i> Chat</a></li>
           </ul>
@@ -33,10 +33,12 @@ const Dashboard = () => {
             <i className="fas fa-search"></i>
           </div>
           <div className="profile">
-            <img src={user.profileImage} alt="Profile" />
             <div className="profile-info">
               <h3>{user.name}</h3>
               <p>{user.email}</p>
+            </div>
+            <div className="profile-image">
+              <img src={user.profileImage} alt="Profile" />
             </div>
           </div>
         </header>

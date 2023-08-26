@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
-import profileImage from './assets/profile.png'; // Import the profile image
+import profileImage from '../../assets/profile.png'; // Import the profile image
 
 const Dashboard = () => {
   const user = {

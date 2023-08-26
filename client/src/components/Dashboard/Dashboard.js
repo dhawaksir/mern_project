@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
-import profileImage from '../../assets/profile.png'; // Import the profile image
+import profileImage from '../../assets/profile.png';
 
 const Dashboard = () => {
   const user = {
@@ -23,6 +23,7 @@ const Dashboard = () => {
             <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>
             <li><a href="#notifications"><i className="fas fa-bell"></i> Notifications</a></li>
             <li><a href="#chat"><i className="fas fa-comments"></i> Chat</a></li>
+            <li><a href="#logout"><i className="fas fa-sign-out-alt"></i> Logout</a></li>
           </ul>
         </nav>
       </div>

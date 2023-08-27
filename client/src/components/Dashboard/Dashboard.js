@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Dashboard.css';
 import profileImage from '../../assets/profile.png';
+
 
 const Dashboard = () => {
   const user = {
@@ -19,7 +22,11 @@ const Dashboard = () => {
           <ul>
             <li><a href="#prfile"><i className="fas fa-chart-line"></i> Dashboard</a></li>
             <li><a href="#projects"><i className="fas fa-tasks"></i> Projects</a></li>
-            <li><a href="#tasks"><i className="fas fa-clipboard-list"></i> Tasks</a></li>
+            <li>
+              <Link to="/purchase"> {/* Use Link component */}
+                <i className="fas fa-clipboard-list"></i> Purchase
+              </Link>
+            </li>
             <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>
             <li><a href="#notifications"><i className="fas fa-bell"></i> Notifications</a></li>
             <li><a href="#chat"><i className="fas fa-comments"></i> Chat</a></li>

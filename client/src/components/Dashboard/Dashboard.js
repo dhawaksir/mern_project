@@ -1,15 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './Dashboard.css';
 import profileImage from '../../assets/profile.png';
-
 
 const Dashboard = () => {
   const user = {
     name: 'John Doe',
     email: 'john@example.com',
-    profileImage: profileImage, // Use the imported profile image
+    profileImage: profileImage,
   };
 
   return (
@@ -20,17 +18,41 @@ const Dashboard = () => {
         </div>
         <nav className="sidebar-nav">
           <ul>
-            <li><a href="#prfile"><i className="fas fa-chart-line"></i> Dashboard</a></li>
-            <li><a href="#projects"><i className="fas fa-tasks"></i> Projects</a></li>
             <li>
-              <Link to="/purchase"> {/* Use Link component */}
+              <Link to="/dashboard">
+                <i className="fas fa-chart-line"></i> Dashboard
+              </Link>
+            </li>
+            <li>
+              <Link to="/projects">
+                <i className="fas fa-tasks"></i> Projects
+              </Link>
+            </li>
+            <li>
+              <Link to="/purchase">
                 <i className="fas fa-clipboard-list"></i> Purchase
               </Link>
             </li>
-            <li><a href="#services"><i className="fas fa-cogs"></i> Services</a></li>
-            <li><a href="#notifications"><i className="fas fa-bell"></i> Notifications</a></li>
-            <li><a href="#chat"><i className="fas fa-comments"></i> Chat</a></li>
-            <li><a href="#logout"><i className="fas fa-sign-out-alt"></i> Logout</a></li>
+            <li>
+              <Link to="/services">
+                <i className="fas fa-cogs"></i> Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/notifications">
+                <i className="fas fa-bell"></i> Notifications
+              </Link>
+            </li>
+            <li>
+              <Link to="/chat">
+                <i className="fas fa-comments"></i> Chat
+              </Link>
+            </li>
+            <li>
+              <Link to="/logout">
+                <i className="fas fa-sign-out-alt"></i> Logout
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>
